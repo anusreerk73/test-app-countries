@@ -68,7 +68,7 @@ const CountryList =  ({fetchList, listData}) => {
                             <Card className={style.listcard}>
                             <Card.Body>
                             <Row>
-                            <Col lg={4} md={4} className={style.img}>
+                            <Col lg={4} md={4} xs={4} sm={4} className={style.img}>
                                 <img  src={item.flag}/>
                             </Col>
                             <Col lg={8} md={8} sm={8} xs={8} className={style.nameWrap}>
