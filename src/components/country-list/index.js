@@ -12,10 +12,19 @@ import Card from 'react-bootstrap/Card'
 import Header from "../../components/header";
 import Footer from "../footer";
 
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/ClipLoader";
 
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 const CountryList =  ({fetchList, listData}) => { 
     const [list,setList] = useState([])
+    const [loading, setLoading] = useState(true);
+    const [color, setColor] = useState("#ffffff");
 
     const { loginData, isLoading } = useSelector((state) => state);
     const dispatch = useDispatch();
@@ -46,7 +55,12 @@ const CountryList =  ({fetchList, listData}) => {
         <div className={style.listWrap}>
            <div class="container">
             <Header/>
-           <Row lg={2} md={2} sm={1} xs={1}>
+           
+
+
+            {list.length != 0 || list.length > 0 ? 
+
+            <Row lg={2} md={2} sm={1} xs={1}>
                  {list.map((item)=>{
                     return (
                        
@@ -62,17 +76,20 @@ const CountryList =  ({fetchList, listData}) => {
                                 <div>{item.region}</div>
 
                             </Col>
-
-                           
                             </Row>
                             </Card.Body>
-                            </Card>
-                            
+                            </Card> 
                       </div>
-                      
-                       
                 ) })}
-            </Row>
+            </Row> : 
+                <div>
+                    <div className="spacer40"></div>
+                      <ClipLoader color={color} loading={loading} css={override} size={150} />
+
+                </div>}
+
+
+
             <Footer/>
            </div>
         </div>

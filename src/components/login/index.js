@@ -39,7 +39,7 @@ const Login = () => {
 
                <div className={style.title}>Sign In</div>
                <div className="spacer10"></div>
-               <div className={style.subtitle}>New user? Create an account</div>
+               <div className={style.subtitle}>New user?  <a href="/">Create an account</a></div>
                <div className="spacer25"></div>
                
             <Formik
@@ -78,7 +78,9 @@ const Login = () => {
                     <Col lg={12}>
                     <button type="submit" className="btn1" >Sign In</button>
                     <div className="spacer25"></div>
-                    <div className="center">Or Sign In With</div>
+                    <div  className="center">
+                    <p class="subtitle line"><span>Or Sign In With</span></p>
+                    </div>
                     <div className="spacer25"></div>
 
                     <Row>
