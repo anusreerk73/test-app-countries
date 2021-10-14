@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import Home from './container/home';
+import Header from './components/header'
 import CountryList from './components/country-list';
 
 
@@ -20,6 +21,8 @@ function App() {
       <Switch>
         <Route exact component={Home} path="/"  ></Route>
         <Route exact component={CountryList} path="/countrylist"></Route>
+        <Route exact component={Header} path="/header"></Route>
+
       </Switch>
     </Router>
   );
