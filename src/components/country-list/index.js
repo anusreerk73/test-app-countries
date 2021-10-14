@@ -71,8 +71,8 @@ const CountryList =  ({fetchList, listData}) => {
                             <Col lg={4} md={4} className={style.img}>
                                 <img  src={item.flag}/>
                             </Col>
-                            <Col lg={8} md={8} sm={8} xs={8}>
-                                <div>{item.name}</div>
+                            <Col lg={8} md={8} sm={8} xs={8} className={style.nameWrap}>
+                                <div className={style.text}>{item.name}</div>
                                 <div>{item.region}</div>
 
                             </Col>
