@@ -10,6 +10,7 @@ import { useHistory } from "react-router-dom";
 import {connect} from 'react-redux';
 import Card from 'react-bootstrap/Card'
 import Header from "../../components/header";
+import Footer from "../footer";
 
 
 
@@ -72,6 +73,7 @@ const CountryList =  ({fetchList, listData}) => {
                        
                 ) })}
             </Row>
+            <Footer/>
            </div>
         </div>
 
