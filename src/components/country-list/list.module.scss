@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+
+.listWrap{
+    .listContainer{
+        margin-top: 2%;
+    }
+    .listcard{
+        height: 137px;
+
+        .img{
+            img{
+                width: 100% !important;
+                height: 100px;
+
+            }
+        }
+    }
+}
