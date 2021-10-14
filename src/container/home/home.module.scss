@@ -4,3 +4,10 @@
   background-color: $primaryBg; 
   height: 100vh; 
 }
+
+
+@media screen and (max-width:480px) {
+    .logo{
+        display: none !important;
+    }
+}

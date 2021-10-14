@@ -15,7 +15,7 @@ const Home = () => {
                     <Login/>
                   </Col>
                   <Col lg={5} md={5} sm={12} xs={12}>
-                        <img src={Assets.loginImg} />
+                        <img className={style.logo} src={Assets.loginImg} />
                   </Col>
                   <Col lg={3}></Col>
 
