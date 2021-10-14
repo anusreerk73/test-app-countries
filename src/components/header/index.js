@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <div className={style.homeWrap}>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="navs">
         <Container>
             <Navbar.Brand href="#all">Countries</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

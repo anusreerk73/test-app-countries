@@ -11,10 +11,10 @@ const Home = () => {
           <div className="container ">
             <div className="spacer80"></div>
               <Row >
-                  <Col lg={6} md={6} sm={12} xs={12}>
+                  <Col lg={7} md={7} sm={12} xs={12}>
                     <Login/>
                   </Col>
-                  <Col lg={6} md={6} sm={12} xs={12}>
+                  <Col lg={5} md={5} sm={12} xs={12}>
                         <img src={Assets.loginImg} />
                   </Col>
                   <Col lg={3}></Col>

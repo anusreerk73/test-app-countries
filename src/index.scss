@@ -14,9 +14,19 @@ code {
 
 // spacer
 
-
+.spacer5{
+  height:5px
+}.spacer10{
+  height:10px
+}
 .spacer20{
   height:20px
+}
+.spacer25{
+  height:25px
+}
+.spacer30{
+  height:30px
 }
 .spacer40{
   height:40px
@@ -29,4 +39,46 @@ code {
 }
 .spacer80{
   height:80px
+}
+
+.inputs{
+  height: 45px;
+  width: 100%;
+  border: 2px solid black;
+  padding-left: 14px;
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+.check{
+  height: 30px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: grey;
+  margin-left: -11px;
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+.textDecor{
+  font-size: 17px;
+}
+.btn1{
+  width: 100%;
+  height: 45px;
+  background-color: #3c3c3c;
+  color: white;
+}
+.center{
+  text-align:center;
+}
+.icon{
+  border: 1px solid;
+  font-size: 25px;
+  padding: 9%;
+  border-radius: 50%;
+}
+.errMsg{
+  color:red;
+}
+.navs {
+  background: #ffffff !important;
 }

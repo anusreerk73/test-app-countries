@@ -24,27 +24,11 @@ const Login = () => {
     let history = useHistory();
 
   const onSubmit = values => {
-    // let formData = {
-    //   username: values.username,
-    //   password: values.password,
-    // }
-
-    // if( formData.username && loginData[0].password == formData.password ){
-        // toast.success("Login Successs")
-    //     localStorage.setItem('UserList', JSON.stringify(list.results))
-    //     history.push(`/userlist`);
-
-    // }else{
-    //     toast.error("Invalid username or password");
-    // }
-
     toast.success("Login Successs")
     setTimeout(function(){ 
         history.push(`/countrylist`);
      }, 3000);
-
-
-}
+    }
 
     return (
     <div className={style.loginWrap}>
@@ -54,7 +38,9 @@ const Login = () => {
            <Col lg={8} md={8} sm={8} xs={8}>
 
                <div className={style.title}>Sign In</div>
+               <div className="spacer10"></div>
                <div className={style.subtitle}>New user? Create an account</div>
+               <div className="spacer25"></div>
                
             <Formik
                 initialValues={{
@@ -77,13 +63,55 @@ const Login = () => {
                     <Field name="password" type="password" className="inputs" placeholder="Password"  />
                     {errors.password && touched.password ? <div className="errMsg">{errors.password}</div> : null}
                     </Col>
+                    <div className="spacer25"></div>
+                    <Col lg={12}>
+                    <Row>
+                        <Col lg={2} md={2} xs={2}>
+                        <Field name="" type="checkbox" className="check"  />
+                        </Col>
+                        <Col lg={10} md={10} xs={10}>
+                            <div className="textDecor">Keep me signed in</div>
+                        </Col>
+                    </Row>
+                    </Col>
+                    <div className="spacer25"></div>
                     <Col lg={12}>
                     <button type="submit" className="btn1" >Sign In</button>
+                    <div className="spacer25"></div>
+                    <div className="center">Or Sign In With</div>
+                    <div className="spacer25"></div>
 
+                    <Row>
+                        <Col lg={3} md={3} xs={3} sm={3}>
+                            <div className="center">
+                           <span  className="icon"> <i class="bi bi-google "></i></span>
+                            </div>
+                        </Col>
+                        <Col lg={3} md={3} xs={3} sm={3}>
+                            <div className="center">
+                           <span className="icon">
+                           <i class="bi bi-facebook "></i>
+                           </span>
+                            </div>
+                        </Col>
+                        <Col lg={3} md={3} xs={3} sm={3}>
+                            <div className="center">
+                                <span className="icon">
+                                <i  class="bi bi-instagram  "></i>
+
+                                </span>
+                            </div>
+                        </Col>
+                        <Col lg={3} md={3} xs={3} sm={3}>
+                            <div className="center">
+                            <span className="icon">
+                            <i class="bi bi-twitter "></i>
+                            </span>
+                            </div>
+                        </Col>
+                    </Row>
 
                     <ToastContainer />
-
-                 
                     </Col>
                     </Row>
                     </Form>
