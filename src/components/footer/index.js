@@ -52,9 +52,11 @@ const Footer = () => {
             <Row lg={1} xs={1} className={style.footer}>
             <div className="spacer40"></div>
                <div>
-                   Example@gmail.com
+                   <a className="email" href = "mailto: example@gmail.com">example@gmail.com</a>
                </div>
                <div>Copyright@2020 Name. All rights reserved.</div>
+               
+
             </Row>
             <div className="spacer60"></div>
         </div>
